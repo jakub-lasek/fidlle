@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { GameViewComponent } from '@ui';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [],
+  imports: [GameViewComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
