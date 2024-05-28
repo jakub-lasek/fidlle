@@ -6,7 +6,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
   standalone: true,
   imports: [MatGridListModule],
   templateUrl: './game-view.component.html',
-  styleUrl: './game-view.component.scss'
 })
 export class GameViewComponent {
 

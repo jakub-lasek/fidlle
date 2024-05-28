@@ -24,9 +24,13 @@
     ],
     "baseUrl": "./src",
     "paths": {
-      "@ui": ["app/ui/index.ts"]
+      "@ui": [
+        "app/ui/index.ts"
+      ],
+      "@shared": [
+        "app/shared/index.ts"
+      ]
     }
-
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
