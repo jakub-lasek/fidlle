@@ -29,6 +29,9 @@
       ],
       "@shared": [
         "app/shared/index.ts"
+      ],
+      "@pages": [
+        "app/pages/index.ts"
       ]
     }
   },
