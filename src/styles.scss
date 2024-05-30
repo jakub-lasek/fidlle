@@ -26,6 +26,7 @@ $fidlle-theme: mat.define-theme((
 // that you are using.
 :root {
   @include mat.all-component-themes($fidlle-theme);
+  font-size: 62.5%;
 }
 
 // Comment out the line below if you want to use the pre-defined typography utility classes.
@@ -36,9 +37,8 @@ $fidlle-theme: mat.define-theme((
 // @include mat.color-variants-backwards-compatibility($theme);
 /* You can add global styles to this file, and also import other style files */
 
-:root {
-  font-size: 62.5%;
-}
-
 html, body { height: 100%; font-size: 16px;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
