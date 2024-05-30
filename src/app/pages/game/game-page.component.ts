@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 
+import { SkillBarComponent } from "@features";
 import { GameViewTemplateComponent } from "@ui";
 
 @Component({
@@ -7,6 +8,6 @@ import { GameViewTemplateComponent } from "@ui";
   templateUrl: "./game-page.component.html",
   styleUrl: "./game-page.component.scss",
   standalone: true,
-  imports: [GameViewTemplateComponent]
+  imports: [GameViewTemplateComponent, SkillBarComponent]
 })
 export class GamePageComponent { }

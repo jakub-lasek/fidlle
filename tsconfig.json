@@ -32,6 +32,9 @@
       ],
       "@pages": [
         "app/pages/index.ts"
+      ],
+      "@features": [
+        "app/features/index.ts"
       ]
     }
   },
