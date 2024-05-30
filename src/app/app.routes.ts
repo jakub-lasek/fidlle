@@ -1,3 +1,15 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { RoutesEnum } from '@shared';
+import { GamePageComponent } from '@pages';
+
+export const routes: Routes = [
+  {
+    path: RoutesEnum.GAME,
+    component: GamePageComponent
+  },
+  {
+    path: "**",
+    redirectTo: RoutesEnum.GAME
+  }
+];
