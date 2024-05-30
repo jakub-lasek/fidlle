@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from "@angular/common";
 import { Component } from "@angular/core";
 
 @Component({
@@ -5,6 +6,6 @@ import { Component } from "@angular/core";
   templateUrl: "./skill-bar.component.html",
   styleUrl: "./skill-bar.component.scss",
   standalone: true,
-  imports: []
+  imports: [NgOptimizedImage]
 })
 export class SkillBarComponent { }
