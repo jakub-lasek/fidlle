@@ -11,5 +11,26 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  gap: 1rem;
   padding: 1.3rem 0;
+
+  &__skills {
+    overflow: auto;
+    padding-inline: 1.3rem;
+    width: 100%;
+
+    mat-tree {
+      width: 100%;
+      background-color: transparent;
+      mat-tree-node {
+
+        color: v.$text-color;
+        font-size: 1.4rem;
+
+        &.skills-group {
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }
