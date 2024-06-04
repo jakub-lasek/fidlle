@@ -29,6 +29,14 @@
 
         &.skills-group {
           font-weight: 500;
+
+          mat-icon {
+            transition: 0.1s linear;
+
+            &.expanded {
+              rotate: 180deg;
+            }
+          }
         }
       }
     }

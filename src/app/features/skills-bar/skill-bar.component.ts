@@ -1,5 +1,5 @@
 import { FlatTreeControl } from "@angular/cdk/tree";
-import { NgOptimizedImage } from "@angular/common";
+import { NgClass, NgOptimizedImage } from "@angular/common";
 import { Component } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
@@ -39,7 +39,7 @@ interface ExampleFlatNode {
   templateUrl: "./skill-bar.component.html",
   styleUrl: "./skill-bar.component.scss",
   standalone: true,
-  imports: [NgOptimizedImage, MatTreeModule, MatButtonModule, MatIconModule]
+  imports: [NgOptimizedImage, MatTreeModule, MatButtonModule, MatIconModule, NgClass]
 })
 export class SkillBarComponent {
   private _transformer = (node: FoodNode, level: number): ExampleFlatNode => {

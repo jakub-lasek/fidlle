@@ -6,7 +6,7 @@ import { GamePageComponent } from '@pages';
 export const routes: Routes = [
   {
     path: RoutesEnum.GAME,
-    component: GamePageComponent
+    loadComponent: () => GamePageComponent
   },
   {
     path: "**",
