@@ -1,5 +1,5 @@
 <div class="container">
-  <img [ngSrc]="'assets/logos/game-logo-128.png'" width="128" height="128" />
+  <img [ngSrc]="'assets/logos/game-logo-128.png'" width="128" height="128"  priority/>
   <div class="container__skills">
     <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
       <mat-tree-node class="skill" *matTreeNodeDef="let node" matTreeNodePadding matTreeNodePaddingIndent="13px">
@@ -9,7 +9,7 @@
       <mat-tree-node class="skills-group" *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodePaddingIndent="13px">
         {{ node.name }}
         <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'Toggle' + node.name">
-          <mat-icon class="mat-icon-rtl-mirror">
+          <mat-icon svgIcon="expand">
             {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
           </mat-icon>
         </button>

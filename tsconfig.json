@@ -35,6 +35,12 @@
       ],
       "@features": [
         "app/features/index.ts"
+      ],
+      "@const": [
+        "app/const/index.ts"
+      ],
+      "@plugins": [
+        "app/plugins/index.ts"
       ]
     }
   },
