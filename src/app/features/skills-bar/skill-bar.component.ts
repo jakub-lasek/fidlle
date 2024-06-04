@@ -4,8 +4,7 @@ import { Component } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatTreeFlatDataSource, MatTreeFlattener, MatTreeModule } from "@angular/material/tree";
-import { SkillFlatNodeType, SkillNodeType } from "./application";
-import { SKILL_NODES } from "./application/const";
+import { SkillFlatNodeType, SkillNodeType, SKILL_NODES } from "./application";
 
 @Component({
   selector: "skill-bar",
@@ -19,20 +18,22 @@ export class SkillBarComponent {
     return {
       expandable: !!node.children && node.children.length > 0,
       name: node.name,
+      iconName: node.iconName,
+      experienceLevel: node.experienceLevel,
       level
     }
   }
 
   treeControl = new FlatTreeControl<SkillFlatNodeType>(
     node => node.level,
-    node => node.expandable
+    node => node.expandable,
   )
 
   treeFlattener = new MatTreeFlattener(
     this._transformer,
     node => node.level,
     node => node.expandable,
-    node => node.children
+    node => node.children,
   )
 
   dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener, SKILL_NODES);

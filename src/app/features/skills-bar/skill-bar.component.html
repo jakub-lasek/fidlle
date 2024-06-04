@@ -3,14 +3,23 @@
   <div class="container__skills">
     <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
       <mat-tree-node class="skill" *matTreeNodeDef="let node" matTreeNodePadding matTreeNodePaddingIndent="13px">
-        {{ node.name }}
+        <div class="skill__wrapper">
+          <div class="name">
+            @if(node.iconName) {
+              <mat-icon [svgIcon]="node.iconName" />
+            }
+            {{ node.name }}
+          </div>
+          @if(node.experienceLevel) {
+            <span class="level">({{node.experienceLevel}})</span>
+          }
+        </div>
       </mat-tree-node>
 
       <mat-tree-node class="skills-group" *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodePaddingIndent="13px">
         {{ node.name }}
         <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'Toggle' + node.name">
-          <mat-icon [ngClass]="{expanded: treeControl.isExpanded(node)}" svgIcon="expand">
-          </mat-icon>
+          <mat-icon [ngClass]="{expanded: treeControl.isExpanded(node)}" svgIcon="expand" />
         </button>
       </mat-tree-node>
     </mat-tree>
