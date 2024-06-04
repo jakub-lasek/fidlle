@@ -4,35 +4,8 @@ import { Component } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatTreeFlatDataSource, MatTreeFlattener, MatTreeModule } from "@angular/material/tree";
-
-interface FoodNode {
-  name: string;
-  children?: FoodNode[];
-}
-
-const TREE_DATA: FoodNode[] = [
-  {
-    name: 'Character',
-    children: [{ name: 'Equipment' }, { name: 'Bank' }],
-  },
-  {
-    name: 'Fighting',
-    children: [
-      {
-        name: 'Strength',
-      },
-      {
-        name: 'Defence',
-      },
-    ],
-  },
-];
-
-interface ExampleFlatNode {
-  expandable: boolean;
-  name: string;
-  level: number;
-}
+import { SkillFlatNodeType, SkillNodeType } from "./application";
+import { SKILL_NODES } from "./application/const";
 
 @Component({
   selector: "skill-bar",
@@ -42,7 +15,7 @@ interface ExampleFlatNode {
   imports: [NgOptimizedImage, MatTreeModule, MatButtonModule, MatIconModule, NgClass]
 })
 export class SkillBarComponent {
-  private _transformer = (node: FoodNode, level: number): ExampleFlatNode => {
+  private _transformer = (node: SkillNodeType, level: number): SkillFlatNodeType => {
     return {
       expandable: !!node.children && node.children.length > 0,
       name: node.name,
@@ -50,7 +23,7 @@ export class SkillBarComponent {
     }
   }
 
-  treeControl = new FlatTreeControl<ExampleFlatNode>(
+  treeControl = new FlatTreeControl<SkillFlatNodeType>(
     node => node.level,
     node => node.expandable
   )
@@ -62,8 +35,8 @@ export class SkillBarComponent {
     node => node.children
   )
 
-  dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener, TREE_DATA);
+  dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener, SKILL_NODES);
 
-  hasChild = (_: number, node: ExampleFlatNode) => node.expandable;
+  hasChild = (_: number, node: SkillFlatNodeType) => node.expandable;
 
 }
