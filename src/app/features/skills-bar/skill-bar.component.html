@@ -3,17 +3,15 @@
   <div class="container__skills">
     <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
       <mat-tree-node class="skill" *matTreeNodeDef="let node" matTreeNodePadding matTreeNodePaddingIndent="13px">
-        <div class="skill__wrapper">
-          <div class="name">
+          <div class="skill__name">
             @if(node.iconName) {
               <mat-icon [svgIcon]="node.iconName" />
             }
             {{ node.name }}
           </div>
           @if(node.experienceLevel) {
-            <span class="level">({{node.experienceLevel}})</span>
+            <span class="skill__level">({{node.experienceLevel}})</span>
           }
-        </div>
       </mat-tree-node>
 
       <mat-tree-node class="skills-group" *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodePaddingIndent="13px">

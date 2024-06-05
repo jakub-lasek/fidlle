@@ -22,12 +22,24 @@
     mat-tree {
       width: 100%;
       background-color: transparent;
-      mat-tree-node {
 
-        color: v.$text-color;
-        font-size: 1.4rem;
+      .skill {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
 
-        &.skills-group {
+         &__name {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+         }
+
+         &__level {
+            font-style: italic;
+         }
+      }
+
+      .skills-group {
           font-weight: 500;
 
           mat-icon {
@@ -38,6 +50,10 @@
             }
           }
         }
+
+      mat-tree-node {
+        color: v.$text-color;
+        font-size: 1.4rem;
       }
     }
   }
