@@ -7,7 +7,7 @@ const CHARACTER_NODES: SkillNodeType[] = [
   },
   {
     name: 'Bank',
-    iconName: 'bank'
+    iconName: 'chest'
   }
 ]
 
