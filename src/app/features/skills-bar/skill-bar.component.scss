@@ -5,6 +5,7 @@
   height: 100%;
   background-color: v.$panel-color-opacity;
   border-radius: 0 v.$border-radius v.$border-radius 0;
+  user-select: none;
 
 
   display: flex;
@@ -15,6 +16,7 @@
   padding: 1.3rem 0;
 
   &__skills {
+    scrollbar-width: none;
     overflow: auto;
     padding-inline: 1.3rem;
     width: 100%;
@@ -24,6 +26,7 @@
       background-color: transparent;
 
       .skill {
+         cursor: pointer;
          display: flex;
          justify-content: space-between;
          align-items: center;

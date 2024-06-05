@@ -1,6 +1,6 @@
 import { FlatTreeControl } from "@angular/cdk/tree";
 import { NgClass, NgOptimizedImage } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatTreeFlatDataSource, MatTreeFlattener, MatTreeModule } from "@angular/material/tree";
@@ -13,7 +13,12 @@ import { SkillFlatNodeType, SkillNodeType, SKILL_NODES } from "./application";
   standalone: true,
   imports: [NgOptimizedImage, MatTreeModule, MatButtonModule, MatIconModule, NgClass]
 })
-export class SkillBarComponent {
+export class SkillBarComponent implements OnInit {
+
+  ngOnInit(): void {
+    this.treeControl.expandAll();
+  }
+
   private _transformer = (node: SkillNodeType, level: number): SkillFlatNodeType => {
     return {
       expandable: !!node.children && node.children.length > 0,
