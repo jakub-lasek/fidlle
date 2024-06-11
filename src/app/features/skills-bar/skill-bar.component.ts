@@ -5,13 +5,14 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatTreeFlatDataSource, MatTreeFlattener, MatTreeModule } from "@angular/material/tree";
 import { SkillFlatNodeType, SkillNodeType, SKILL_NODES } from "./application";
+import { TranslateModule } from "@ngx-translate/core";
 
 @Component({
   selector: "skill-bar",
   templateUrl: "./skill-bar.component.html",
   styleUrl: "./skill-bar.component.scss",
   standalone: true,
-  imports: [NgOptimizedImage, MatTreeModule, MatButtonModule, MatIconModule, NgClass]
+  imports: [NgOptimizedImage, MatTreeModule, MatButtonModule, MatIconModule, NgClass, TranslateModule]
 })
 export class SkillBarComponent implements OnInit {
 

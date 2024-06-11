@@ -1,0 +1,31 @@
+{
+  "skill-bar": {
+    "character": "Character",
+    "equipment": "Equipment",
+    "bank": "Bank",
+    "fighting": "Fighting",
+    "defence": "Defence",
+    "hitpoints": "Hitpoints",
+    "melee": "Melee",
+    "ranged": "Ranged",
+    "magic": "Magic",
+    "rituals": "Rituals",
+    "shamanism": "Shamanism",
+    "rune-carving": "Rune carving",
+    "alchemy": "Alchemy",
+    "scrolls-writting": "Scrolls writting",
+    "summoning": "Summoning",
+    "craftsmanship": "Craftsmanship",
+    "smithing": "Smithing",
+    "cooking": "Cooking",
+    "woodworking": "woodworking",
+    "tailoring": "Tailoring",
+    "leatherworking": "Leatherworking",
+    "hoarding": "Hoarding",
+    "woodcutting": "Woodcutting",
+    "herbalism": "Herbalism",
+    "mining": "Mining",
+    "skinning": "Skinning",
+    "harvesting": "Harvesting"
+  }
+}

@@ -1,49 +1,51 @@
 import { SkillNodeType } from "../../types";
 
+const getTranslateKey = (name: string): string => `skill-bar.nodes.${name}`
+
 const CHARACTER_NODES: SkillNodeType[] = [
   {
-    name: 'Equipment',
+    name: getTranslateKey('equipment'),
     iconName: 'item-bag'
   },
   {
-    name: 'Bank',
+    name: getTranslateKey('bank'),
     iconName: 'chest'
   }
 ]
 
 const FIGHTING_NODES: SkillNodeType[] = [
   {
-    name: 'Strength',
+    name: getTranslateKey('strength'),
     experienceLevel: 1,
     iconName: 'biceps'
   },
   {
-    name: 'Defence',
+    name: getTranslateKey('defence'),
     experienceLevel: 1,
     iconName: 'shield'
   },
   {
-    name: 'Hitpoints',
+    name: getTranslateKey('hitpoints'),
     experienceLevel: 1,
     iconName: 'heart'
   },
   {
-    name: 'Melee',
+    name: getTranslateKey('melee'),
     experienceLevel: 1,
     iconName: 'sword'
   },
   {
-    name: 'Ranged',
+    name: getTranslateKey('ranged'),
     experienceLevel: 1,
     iconName: 'bow'
   },
   {
-    name: 'Magic',
+    name: getTranslateKey('magic'),
     experienceLevel: 1,
     iconName: 'magic'
   },
   {
-    name: 'Rituals',
+    name: getTranslateKey('rituals'),
     experienceLevel: 1,
     iconName: 'spell-book'
   }
@@ -51,22 +53,22 @@ const FIGHTING_NODES: SkillNodeType[] = [
 
 const SHAMANISM_NODES: SkillNodeType[] = [
   {
-    name: 'Rune carving',
+    name: getTranslateKey('rune-carving'),
     experienceLevel: 1,
     iconName: 'rune'
   },
   {
-    name: 'Alchemy',
+    name: getTranslateKey('alchemy'),
     experienceLevel: 1,
     iconName: 'cauldron'
   },
   {
-    name: 'Scrolls writing',
+    name: getTranslateKey('scrolls-writting'),
     experienceLevel: 1,
     iconName: 'scroll'
   },
   {
-    name: 'Summoning',
+    name: getTranslateKey('summoning'),
     experienceLevel: 1,
     iconName: 'dragon-egg'
   }
@@ -74,27 +76,27 @@ const SHAMANISM_NODES: SkillNodeType[] = [
 
 const CRAFTSMANSHIP_NODES: SkillNodeType[] = [
   {
-    name: 'Smithing',
+    name: getTranslateKey('smithing'),
     iconName: 'anvil',
     experienceLevel: 1
   },
   {
-    name: 'Cooking',
+    name: getTranslateKey('cooking'),
     iconName: 'chef-hat',
     experienceLevel: 1
   },
   {
-    name: 'Woodworking',
+    name: getTranslateKey('woodworking'),
     iconName: 'chisel',
     experienceLevel: 1
   },
   {
-    name: 'Tailoring',
+    name: getTranslateKey('tailoring'),
     iconName: 'wool',
     experienceLevel: 1
   },
   {
-    name: 'Leatherworking',
+    name: getTranslateKey('leatherworking'),
     iconName: 'leather',
     experienceLevel: 1
   }
@@ -102,27 +104,27 @@ const CRAFTSMANSHIP_NODES: SkillNodeType[] = [
 
 const HOARDING_NODES: SkillNodeType[] = [
   {
-    name: 'Woodcutting',
+    name: getTranslateKey('woodcutting'),
     experienceLevel: 1,
     iconName: 'axe'
   },
   {
-    name: 'Herbalism',
+    name: getTranslateKey('herbalism'),
     experienceLevel: 1,
     iconName: 'herbalism'
   },
   {
-    name: 'Mining',
+    name: getTranslateKey('mining'),
     experienceLevel: 1,
     iconName: 'pickaxe'
   },
   {
-    name: 'Skinning',
+    name: getTranslateKey('skinning'),
     experienceLevel: 1,
     iconName: 'knife'
   },
   {
-    name: 'Harvesting',
+    name: getTranslateKey('harvesting'),
     experienceLevel: 1,
     iconName: 'cotton'
   }
@@ -130,23 +132,23 @@ const HOARDING_NODES: SkillNodeType[] = [
 
 export const SKILL_NODES: SkillNodeType[] = [
   {
-    name: 'Character',
+    name: getTranslateKey('character'),
     children: CHARACTER_NODES
   },
   {
-    name: 'Fighting',
+    name: getTranslateKey('fighting'),
     children: FIGHTING_NODES
   },
   {
-    name: 'Shamanism',
+    name: getTranslateKey('shamanism'),
     children: SHAMANISM_NODES
   },
   {
-    name: 'Craftsmanship',
+    name: getTranslateKey('craftsmanship'),
     children: CRAFTSMANSHIP_NODES
   },
   {
-    name: 'Hoarding',
+    name: getTranslateKey('hoarding'),
     children: HOARDING_NODES
   }
 ]

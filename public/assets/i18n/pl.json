@@ -1,0 +1,34 @@
+{
+  "skill-bar": {
+    "nodes": {
+      "character": "Postać",
+      "equipment": "Wyposażenie",
+      "bank": "Bank",
+      "fighting": "Walka",
+      "strength": "Siła",
+      "defence": "Obrona",
+      "hitpoints": "Punkty życia",
+      "melee": "Walka wręcz",
+      "ranged": "Walka dystansowa",
+      "magic": "Magia",
+      "rituals": "Rytuały",
+      "shamanism": "Szamanizm",
+      "rune-carving": "Rzeźbienie run",
+      "alchemy": "Alchemia",
+      "scrolls-writting": "Pisanie zwojów",
+      "summoning": "Przywoływanie",
+      "craftsmanship": "Rzemiosło",
+      "smithing": "Kowalstwo",
+      "cooking": "Gotowanie",
+      "woodworking": "Stolarstwo",
+      "tailoring": "Krawiectwo",
+      "leatherworking": "Garbarstwo",
+      "hoarding": "Pozyskiwanie",
+      "woodcutting": "Ścinanie drzew",
+      "herbalism": "Zielarstwo",
+      "mining": "Górnictwo",
+      "skinning": "Skórowanie",
+      "harvesting": "Zbieractwo"
+    }
+  }
+}

@@ -7,7 +7,7 @@
             @if(node.iconName) {
               <mat-icon [svgIcon]="node.iconName" />
             }
-            {{ node.name }}
+            {{ node.name  | translate}}
           </div>
           @if(node.experienceLevel) {
             <span class="skill__level">({{node.experienceLevel}})</span>
@@ -15,7 +15,7 @@
       </mat-tree-node>
 
       <mat-tree-node class="skills-group" *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodePaddingIndent="13px">
-        {{ node.name }}
+        {{ node.name | translate}}
         <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'Toggle' + node.name">
           <mat-icon [ngClass]="{expanded: treeControl.isExpanded(node)}" svgIcon="expand" />
         </button>
