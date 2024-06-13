@@ -1,6 +1,7 @@
 export type SkillNodeType = {
   name: string;
   iconName?: string;
+  url?: string;
   experienceLevel?: number;
   children?: SkillNodeType[];
 }
@@ -10,5 +11,6 @@ export type SkillFlatNodeType = {
   name: string;
   level: number;
   iconName?: string;
+  url?: string;
   experienceLevel?: number;
 }

@@ -1,3 +1,4 @@
+import { RoutesEnum } from "@shared";
 import { SkillNodeType } from "../../types";
 
 const getTranslateKey = (name: string): string => `skill-bar.nodes.${name}`
@@ -17,6 +18,7 @@ const FIGHTING_NODES: SkillNodeType[] = [
   {
     name: getTranslateKey('strength'),
     experienceLevel: 1,
+    url: RoutesEnum.STRENGTH,
     iconName: 'biceps'
   },
   {

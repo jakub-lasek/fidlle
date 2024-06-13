@@ -6,15 +6,18 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatTreeFlatDataSource, MatTreeFlattener, MatTreeModule } from "@angular/material/tree";
 import { SkillFlatNodeType, SkillNodeType, SKILL_NODES } from "./application";
 import { TranslateModule } from "@ngx-translate/core";
+import { RouterLink, RouterLinkActive } from "@angular/router";
+import { RouterOutletsEnum } from "@const";
 
 @Component({
   selector: "skill-bar",
   templateUrl: "./skill-bar.component.html",
   styleUrl: "./skill-bar.component.scss",
   standalone: true,
-  imports: [NgOptimizedImage, MatTreeModule, MatButtonModule, MatIconModule, NgClass, TranslateModule]
+  imports: [NgOptimizedImage, MatTreeModule, MatButtonModule, MatIconModule, NgClass, TranslateModule, RouterLink, RouterLinkActive]
 })
 export class SkillBarComponent implements OnInit {
+  routerOutletsEnum = RouterOutletsEnum;
 
   ngOnInit(): void {
     this.treeControl.expandAll();
@@ -26,6 +29,7 @@ export class SkillBarComponent implements OnInit {
       name: node.name,
       iconName: node.iconName,
       experienceLevel: node.experienceLevel,
+      url: node.url,
       level
     }
   }
@@ -46,4 +50,7 @@ export class SkillBarComponent implements OnInit {
 
   hasChild = (_: number, node: SkillFlatNodeType) => node.expandable;
 
+  generateRouterLink(url: string): string | any[] | null | undefined {
+    return ['/', { outlets: { [this.routerOutletsEnum.GAME_SECTION_OUTLET]: [url] } }]
+  }
 }

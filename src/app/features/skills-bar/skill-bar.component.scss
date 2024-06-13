@@ -18,7 +18,6 @@
   &__skills {
     scrollbar-width: none;
     overflow: auto;
-    padding-inline: 1.3rem;
     width: 100%;
 
     mat-tree {
@@ -30,6 +29,11 @@
          display: flex;
          justify-content: space-between;
          align-items: center;
+         padding-inline: 1.3rem;
+
+         &.active {
+            background-color: v.$active-panel;
+         }
 
          &__name {
             display: flex;
