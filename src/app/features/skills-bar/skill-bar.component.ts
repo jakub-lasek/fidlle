@@ -1,13 +1,15 @@
 import { FlatTreeControl } from "@angular/cdk/tree";
 import { NgClass, NgOptimizedImage } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
+import { RouterLink, RouterLinkActive } from "@angular/router";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatTreeFlatDataSource, MatTreeFlattener, MatTreeModule } from "@angular/material/tree";
-import { SkillFlatNodeType, SkillNodeType, SKILL_NODES } from "./application";
 import { TranslateModule } from "@ngx-translate/core";
-import { RouterLink, RouterLinkActive } from "@angular/router";
+
 import { RouterOutletsEnum } from "@const";
+
+import { SkillFlatNodeType, SkillNodeType, SKILL_NODES } from "./application";
 
 @Component({
   selector: "skill-bar",
@@ -50,7 +52,7 @@ export class SkillBarComponent implements OnInit {
 
   hasChild = (_: number, node: SkillFlatNodeType) => node.expandable;
 
-  generateRouterLink(url: string): string | any[] | null | undefined {
-    return ['/', { outlets: { [this.routerOutletsEnum.GAME_SECTION_OUTLET]: [url] } }]
+  generateRouterLink(url: string): unknown[] {
+    return [{ outlets: { [this.routerOutletsEnum.GAME_SECTION_OUTLET]: [url] } }]
   }
 }

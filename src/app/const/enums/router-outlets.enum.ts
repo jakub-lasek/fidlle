@@ -1,3 +1,3 @@
 export enum RouterOutletsEnum {
-  GAME_SECTION_OUTLET = 'sectionOutlet'
+  GAME_SECTION_OUTLET = 'gameSection'
 }

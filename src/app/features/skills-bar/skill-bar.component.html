@@ -10,10 +10,10 @@
       </mat-tree-node>
 
       <mat-tree-node
-        [routerLink]="generateRouterLink(node.url)"
-        [routerLinkActive]="'active'"
         class="skill"
         *matTreeNodeDef="let node"
+        [routerLink]="generateRouterLink(node.url)"
+        [routerLinkActive]="'active'"
         [style.padding-left]="'2.6rem'"
       >
           <div class="skill__name">
