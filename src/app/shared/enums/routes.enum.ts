@@ -1,3 +1,4 @@
 export enum RoutesEnum {
-  GAME = "game"
+  GAME = "game",
+  STRENGTH = "strength"
 }

@@ -2,11 +2,20 @@ import { Routes } from '@angular/router';
 
 import { RoutesEnum } from '@shared';
 import { GamePageComponent } from '@pages';
+import { RouterOutletsEnum } from '@const';
+import { StrengthComponent } from '@features';
 
 export const routes: Routes = [
   {
     path: RoutesEnum.GAME,
-    component: GamePageComponent
+    loadComponent: () => GamePageComponent,
+    children: [
+      {
+        path: RoutesEnum.STRENGTH,
+        loadComponent: () => StrengthComponent,
+        outlet: RouterOutletsEnum.GAME_SECTION_OUTLET
+      },
+    ]
   },
   {
     path: "**",

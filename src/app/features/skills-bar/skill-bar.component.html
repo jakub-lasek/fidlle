@@ -1,0 +1,32 @@
+<div class="container">
+  <img [ngSrc]="'assets/logos/game-logo-128.png'" width="128" height="128" priority alt="Game Logo"/>
+  <div class="container__skills">
+    <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+      <mat-tree-node class="skills-group" *matTreeNodeDef="let node;when: hasChild" [style.padding-left]="'1.3rem'">
+        {{ node.name | translate}}
+        <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'Expand/Collapse ' + node.name">
+          <mat-icon [ngClass]="{expanded: treeControl.isExpanded(node)}" svgIcon="expand" />
+        </button>
+      </mat-tree-node>
+
+      <mat-tree-node
+        class="skill"
+        *matTreeNodeDef="let node"
+        [routerLink]="generateRouterLink(node.url)"
+        [routerLinkActive]="'active'"
+        [style.padding-left]="'2.6rem'"
+      >
+          <div class="skill__name">
+            @if(node.iconName) {
+              <mat-icon [svgIcon]="node.iconName" />
+            }
+            {{ node.name  | translate}}
+          </div>
+          @if(node.experienceLevel) {
+            <span class="skill__level">({{node.experienceLevel}})</span>
+          }
+      </mat-tree-node>
+    </mat-tree>
+  </div>
+</div>
+

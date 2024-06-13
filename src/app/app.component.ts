@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { IconsService } from '@plugins';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +10,14 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  private readonly translateService = inject(TranslateService);
+  private readonly iconsService = inject(IconsService);
+
+
+  ngOnInit() {
+    this.iconsService.registerIcons();
+    this.translateService.use(this.translateService.getBrowserLang() || 'en')
+  }
+
 }

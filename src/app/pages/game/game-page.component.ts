@@ -1,5 +1,8 @@
 import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
 
+import { SkillBarComponent } from "@features";
+import { RouterOutletsEnum } from "@const";
 import { GameViewTemplateComponent } from "@ui";
 
 @Component({
@@ -7,6 +10,8 @@ import { GameViewTemplateComponent } from "@ui";
   templateUrl: "./game-page.component.html",
   styleUrl: "./game-page.component.scss",
   standalone: true,
-  imports: [GameViewTemplateComponent]
+  imports: [GameViewTemplateComponent, SkillBarComponent, RouterOutlet]
 })
-export class GamePageComponent { }
+export class GamePageComponent {
+  public readonly routerOutletsEnum = RouterOutletsEnum;
+}

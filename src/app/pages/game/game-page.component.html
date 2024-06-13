@@ -1,5 +1,7 @@
 <ui-game-view-template>
-  <div class="nav" [style.background]="'red'">NAV</div>
-  <div class="header" [style.background]="'blue'">HEADER</div>
-  <div class="section" [style.background]="'yellow'">SECTION</div>
+  <skill-bar class="nav" />
+  <div class="header" [style.background]="'rgba(40, 40, 40, 0.95)'">HEADER</div>
+  <div class="section">
+    <router-outlet [name]="routerOutletsEnum.GAME_SECTION_OUTLET" />
+  </div>
 </ui-game-view-template>
