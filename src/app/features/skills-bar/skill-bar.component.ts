@@ -19,8 +19,6 @@ import { SkillFlatNodeType, SkillNodeType, SKILL_NODES } from "./application";
   imports: [NgOptimizedImage, MatTreeModule, MatButtonModule, MatIconModule, NgClass, TranslateModule, RouterLink, RouterLinkActive]
 })
 export class SkillBarComponent implements OnInit {
-  routerOutletsEnum = RouterOutletsEnum;
-
   ngOnInit(): void {
     this.treeControl.expandAll();
   }
@@ -53,6 +51,6 @@ export class SkillBarComponent implements OnInit {
   hasChild = (_: number, node: SkillFlatNodeType) => node.expandable;
 
   generateRouterLink(url: string): unknown[] {
-    return [{ outlets: { [this.routerOutletsEnum.GAME_SECTION_OUTLET]: [url] } }]
+    return [{ outlets: { [RouterOutletsEnum.GAME_SECTION_OUTLET]: [url] } }]
   }
 }
