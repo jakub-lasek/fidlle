@@ -27,8 +27,8 @@
       "@ui": [
         "app/ui/index.ts"
       ],
-      "@shared": [
-        "app/shared/index.ts"
+      "@shared/*": [
+        "app/shared/*"
       ],
       "@pages": [
         "app/pages/index.ts"

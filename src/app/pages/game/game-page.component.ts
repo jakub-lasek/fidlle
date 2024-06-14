@@ -2,8 +2,8 @@ import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 
 import { SkillBarComponent } from "@features";
-import { RouterOutletsEnum } from "@shared";
-import { GameViewTemplateComponent } from "@ui";
+import { RouterOutletsEnum } from "@shared/const";
+import { GameViewTemplateComponent } from "@shared/ui";
 
 @Component({
   selector: "game-page",

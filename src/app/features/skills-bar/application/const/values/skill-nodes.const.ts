@@ -1,4 +1,4 @@
-import { RoutesEnum } from "@shared";
+import { RoutesEnum } from "@shared/const";
 import { SkillNodeType } from "../../types";
 
 const getTranslateKey = (name: string): string => `skill-bar.nodes.${name}`

@@ -1,8 +1,7 @@
 import { Routes } from '@angular/router';
 
-import { RoutesEnum } from '@shared';
+import { RoutesEnum, RouterOutletsEnum } from '@shared/const';
 import { GamePageComponent } from '@pages';
-import { RouterOutletsEnum } from '@shared';
 import { StrengthComponent } from '@features';
 
 export const routes: Routes = [
