@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 
 import { SkillBarComponent } from "@features";
-import { RouterOutletsEnum } from "@const";
+import { RouterOutletsEnum } from "@shared";
 import { GameViewTemplateComponent } from "@ui";
 
 @Component({

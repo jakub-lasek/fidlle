@@ -1,7 +1,7 @@
 import { Injectable, inject } from "@angular/core";
 import { MatIconRegistry } from "@angular/material/icon";
 import { DomSanitizer } from "@angular/platform-browser";
-import { ICONS } from "@const";
+import { ICONS } from "@shared";
 
 @Injectable({
   providedIn: 'root'

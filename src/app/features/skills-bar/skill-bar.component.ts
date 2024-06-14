@@ -7,7 +7,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatTreeFlatDataSource, MatTreeFlattener, MatTreeModule } from "@angular/material/tree";
 import { TranslateModule } from "@ngx-translate/core";
 
-import { RouterOutletsEnum } from "@const";
+import { RouterOutletsEnum } from "@shared";
 
 import { SkillFlatNodeType, SkillNodeType, SKILL_NODES } from "./application";
 
