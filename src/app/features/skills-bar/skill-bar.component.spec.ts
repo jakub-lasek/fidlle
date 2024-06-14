@@ -1,11 +1,16 @@
 import { RouterOutletsEnum } from "@shared/const";
 import { SkillBarComponent } from "./skill-bar.component";
+import { TestBed } from "@angular/core/testing";
 
 describe('SkillBarComponent', () => {
   let component: SkillBarComponent;
 
   beforeEach(() => {
-    component = new SkillBarComponent();
+    TestBed.configureTestingModule({
+      providers: [SkillBarComponent]
+    })
+
+    component = TestBed.inject(SkillBarComponent)
   })
 
   it('should create component', () => {

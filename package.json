@@ -17,9 +17,9 @@
     ],
     "moduleNameMapper": {
       "^@shared/(.*)$": "<rootDir>/src/app/shared/$1",
-      "^@pages/(.*)$": "<rootDir>/src/app/pages/$1",
-      "^@features/(.*)$": "<rootDir>/src/app/features/$1",
-      "^@plugins/(.*)$": "<rootDir>/src/app/plugins/$1"
+      "^@pages": "<rootDir>/src/app/pages/$1",
+      "^@features": "<rootDir>/src/app/features/$1",
+      "^@plugins": "<rootDir>/src/app/plugins/$1"
     }
   },
   "private": true,
