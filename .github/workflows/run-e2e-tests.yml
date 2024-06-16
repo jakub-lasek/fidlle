@@ -22,5 +22,5 @@ jobs:
       run: npm ci
 
     - name: Run tests
-      run: npm cy:test
+      run: npm run cy:test
 
