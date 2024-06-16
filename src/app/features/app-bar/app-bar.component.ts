@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
-import { CalendarComponent, ProfileComponent, ResourcesComponent } from "./components";
+import { Component, WritableSignal, signal } from "@angular/core";
+import { CalendarComponent, ProfileComponent, ResourcesComponent } from "./ui";
+import { RESOURCES, ResourceType } from "./application";
 
 @Component({
   selector: 'app-bar',
@@ -8,4 +9,6 @@ import { CalendarComponent, ProfileComponent, ResourcesComponent } from "./compo
   standalone: true,
   imports: [CalendarComponent, ResourcesComponent, ProfileComponent]
 })
-export class AppBarComponent { }
+export class AppBarComponent {
+  resources: WritableSignal<ResourceType[]> = signal<ResourceType[]>(RESOURCES);
+}
