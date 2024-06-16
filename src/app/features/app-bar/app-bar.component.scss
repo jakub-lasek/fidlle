@@ -1,0 +1,7 @@
+@use "../../styles/variables" as v;
+
+.container {
+    min-height: 50px;
+    background-color: v.$panel-color-opacity;
+    border-bottom-left-radius: v.$border-radius;
+}
