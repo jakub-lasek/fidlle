@@ -1,5 +1,6 @@
 export type ProfileMenuItemType = {
   iconName: string,
-  text: string
+  text: string,
+  textColor?: string;
 }
 

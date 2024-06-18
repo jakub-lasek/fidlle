@@ -6,7 +6,7 @@
     @for(item of profileItems; track item.text) {
     <button mat-menu-item>
       <mat-icon [svgIcon]="item.iconName" />
-      <span>{{ item.text | translate}}</span>
+        <span [ngStyle]="{color: item.textColor}">{{ item.text | translate}}</span>
     </button>
     }
   </mat-menu>

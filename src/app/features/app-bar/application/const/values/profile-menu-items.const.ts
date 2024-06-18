@@ -17,6 +17,7 @@ export const PROFILE_MENU_ITEMS: ProfileMenuItemType[] = [
   },
   {
     text: `${TRANSLATE_PATH}.logout`,
-    iconName: 'logout'
+    iconName: 'logout',
+    textColor: '#fb1616'
   }
 ]

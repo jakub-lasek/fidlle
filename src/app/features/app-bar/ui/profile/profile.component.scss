@@ -1,9 +1,0 @@
-@use "../../../../styles/variables" as v;
-
-.container {
-  mat-menu {
-    button {
-      color: v.$text-color;
-    }
-  }
-}

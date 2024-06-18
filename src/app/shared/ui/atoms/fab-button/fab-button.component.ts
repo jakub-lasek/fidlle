@@ -12,7 +12,7 @@ import { MatIconModule } from "@angular/material/icon";
 })
 export class FabButtonAtomComponent {
   ariaLabel: InputSignal<string> = input.required<string>();
-  text: InputSignal<string | number> = input.required<string | number>();
+  text: InputSignal<string> = input.required<string>();
   iconName: InputSignal<string> = input.required<string>();
   textColor: InputSignal<string> = input<string>('');
 }
