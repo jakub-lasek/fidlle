@@ -1,4 +1,12 @@
 {
+  "app-bar": {
+    "profile-panel": {
+      "profile": "Profile",
+      "stats": "Statistics",
+      "settings": "Settings",
+      "logout": "Logout"
+    }
+  },
   "skill-bar": {
     "character": "Character",
     "equipment": "Equipment",

@@ -1,16 +1,12 @@
 @use '@angular/material' as mat;
 
+@import "./app/styles/overrides/overrides";
 @import "./app/styles/normalize";
 
 
 @include mat.core();
 
 $fidlle-theme: mat.define-theme((
-  color: (
-    theme-type: light,
-    primary: mat.$azure-palette,
-    tertiary: mat.$blue-palette,
-  ),
   density: (
     scale: 0,
   )
