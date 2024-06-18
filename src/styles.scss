@@ -17,7 +17,6 @@ $fidlle-theme: mat.define-theme((
 :root {
   @include mat.all-component-themes($fidlle-theme);
   font-size: 62.5%;
-  --mat-menu-item-hover-state-layer-color: #3b3b3b;
 }
 
 // Comment out the line below if you want to use the pre-defined typography utility classes.
