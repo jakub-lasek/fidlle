@@ -1,0 +1,10 @@
+<div class="container">
+  @for(resource of resources(); track resource.name) {
+    <fab-button-atom
+      [text]="resource.value"
+      [textColor]="resource.color"
+      [iconName]="resource.iconName"
+      [ariaLabel]="'Shop for ' + resource.name"
+    />
+  }
+</div>

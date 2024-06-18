@@ -1,0 +1,15 @@
+<button
+  mat-fab
+  class="fab-button"
+  [color]="'transparent'"
+  [extended]="true"
+  [disableRipple]="true"
+  [ariaLabel]="ariaLabel"
+  [ngStyle]="{
+  'box-shadow': 'none',
+  color: textColor()
+  }"
+>
+  <mat-icon [svgIcon]="iconName()" />
+  <span>{{ text() }}</span>
+</button>

@@ -1,0 +1,18 @@
+@use "../../styles/variables" as v;
+
+.container {
+    height: 5rem;
+    background-color: v.$panel-color-opacity;
+    border-bottom-left-radius: v.$border-radius;
+    color: v.$text-color;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.6rem;
+
+    &__account {
+      display: flex;
+      gap: 2.4rem;
+    }
+}
