@@ -1,7 +1,5 @@
 import { Component, InputSignal, input } from "@angular/core";
-import { MatButtonModule } from "@angular/material/button";
-import { NgStyle } from "@angular/common";
-import { MatIconModule } from "@angular/material/icon";
+import { FabButtonAtomComponent } from "@shared/ui/atoms";
 import { ResourceType } from "../../application";
 
 @Component({
@@ -9,7 +7,7 @@ import { ResourceType } from "../../application";
   templateUrl: './resources.component.html',
   styleUrl: './resources.component.scss',
   standalone: true,
-  imports: [MatIconModule, MatButtonModule, NgStyle]
+  imports: [FabButtonAtomComponent]
 })
 export class ResourcesComponent {
   resources: InputSignal<ResourceType[]> = input.required<ResourceType[]>()

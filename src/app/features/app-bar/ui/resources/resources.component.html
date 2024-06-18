@@ -1,14 +1,10 @@
 <div class="container">
   @for(resource of resources(); track resource.name) {
-  <button
-    mat-fab
-    class="container__resource"
-    [ngStyle]="{color: resource.color, 'box-shadow': 'none'}"
-    [extended]="true"
-    [disableRipple]="true"
-  >
-    <mat-icon [svgIcon]="resource.iconName" />
-    <span>{{ resource.value }}</span>
-  </button>
+    <fab-button-atom
+      [text]="resource.value"
+      [textColor]="resource.color"
+      [iconName]="resource.iconName"
+      [ariaLabel]="'Shop for ' + resource.name"
+    />
   }
 </div>
