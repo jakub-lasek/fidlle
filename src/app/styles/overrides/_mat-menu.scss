@@ -1,0 +1,10 @@
+@use "../variables" as v;
+
+div.mat-mdc-menu-panel {
+  background-color: v.$panel-color-no-opacity;
+  .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: v.$text-color;
+  }
+}

@@ -1,16 +1,12 @@
 @use '@angular/material' as mat;
 
+@import "./app/styles/overrides/overrides";
 @import "./app/styles/normalize";
 
 
 @include mat.core();
 
 $fidlle-theme: mat.define-theme((
-  color: (
-    theme-type: light,
-    primary: mat.$azure-palette,
-    tertiary: mat.$blue-palette,
-  ),
   density: (
     scale: 0,
   )
@@ -21,6 +17,7 @@ $fidlle-theme: mat.define-theme((
 :root {
   @include mat.all-component-themes($fidlle-theme);
   font-size: 62.5%;
+  --mat-menu-item-hover-state-layer-color: #3b3b3b;
 }
 
 // Comment out the line below if you want to use the pre-defined typography utility classes.

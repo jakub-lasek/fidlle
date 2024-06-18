@@ -3,9 +3,11 @@
     <mat-icon svgIcon="grim-reaper" />
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>Profile</button>
-    <button mat-menu-item>Stats</button>
-    <button mat-menu-item>Settings</button>
-    <button mat-menu-item>Logout</button>
+    @for(item of profileItems; track item.text) {
+    <button mat-menu-item>
+      <mat-icon [svgIcon]="item.iconName" />
+      <span>{{ item.text | translate}}</span>
+    </button>
+    }
   </mat-menu>
 </div>
