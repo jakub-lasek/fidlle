@@ -1,3 +1,9 @@
 <div class="container">
-  CALENDAR
+  <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'Open calendar'">
+    <mat-icon  svgIcon="calendar" />
+  </button>
+  <div class="container__date">
+    <span>{{ gameDate() | date : 'dd.MM.yyyy' }}</span>
+    <span>{{ gameDate() | date : 'HH:mm' }}</span>
+  </div>
 </div>
