@@ -9,7 +9,7 @@ const Sidebar: FC = () => {
             <div className="w-full flex justify-center">
                 <img srcSet="/fidlle.png" width={128} height={128} />
             </div>
-            {SIDEBAR_SECTIONS.map((section: SidebarSectionInterface) => <SidebarSection {...section} />)}
+            {SIDEBAR_SECTIONS.map((section: SidebarSectionInterface) => <SidebarSection key={section.title} {...section} />)}
         </nav>
     )
 }
