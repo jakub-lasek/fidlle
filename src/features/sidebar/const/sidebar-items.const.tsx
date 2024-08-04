@@ -34,7 +34,7 @@ export const SIDEBAR_SECTIONS: Array<SidebarSectionInterface> = [
                 path: RoutesEnum.DEFENCE
             },
             {
-                title: 'Hitpoints',
+                title: 'Endurance',
                 icon: <HitpointsIcon />,
                 level: 1,
                 path: RoutesEnum.HITPOINTS
