@@ -1,14 +1,15 @@
 {
-    "Character": "Character",
-    "Equipment": "Equipment",
-    "Village": "Village",
-    "Fighting": "Fighting",
-    "Strength": "Strength",
-    "Defence": "Defence",
-    "Endurance": "Endurance",
-    "Melee": "Melee",
-    "Ranged": "Ranged",
-    "Magic": "Magic",
-    "Rituals": "Rituals"
+    "skills": {
+        "character": "Character",
+        "equipment": "Equipment",
+        "village": "Village",
+        "fighting": "Fighting",
+        "strength": "Strength",
+        "defence": "Defence",
+        "endurance": "Endurance",
+        "melee": "Melee",
+        "ranged": "Ranged",
+        "magic": "Magic",
+        "rituals": "Rituals"
+    }
 }
-
