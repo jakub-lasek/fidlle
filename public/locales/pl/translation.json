@@ -1,0 +1,15 @@
+{
+    "skills": {
+        "character": "Postać",
+        "equipment": "Ekwipunek",
+        "village": "Wioska",
+        "fighting": "Walka",
+        "strength": "Siła",
+        "defence": "Obrona",
+        "hitpoints": "Wytrzymałość",
+        "melee": "Walka wręcz",
+        "ranged": "Walka dystansowa",
+        "magic": "Magia",
+        "rituals": "Rytuały"
+    }
+}

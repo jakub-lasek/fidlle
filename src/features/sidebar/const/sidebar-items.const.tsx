@@ -1,57 +1,69 @@
+import { RoutesEnum } from "../../../router/routes.enum";
 import { DefenceIcon, HitpointsIcon, ItemBagIcon, MagicIcon, MeleeIcon, RangedIcon, RitualsIcon, StrengthIcon, VillagerIcon } from "../../../shared/icons";
 import { SidebarSectionInterface } from "../interfaces";
 
+const translationKey = 'skills';
+
 export const SIDEBAR_SECTIONS: Array<SidebarSectionInterface> = [
     {
-        title: 'Character',
+        title: `${translationKey}.character`,
         items: [
             {
-                title: 'Equipment',
-                icon: <ItemBagIcon />
+                title: `${translationKey}.equipment`,
+                icon: <ItemBagIcon />,
+                path: RoutesEnum.EQUIPMENT
             },
             {
-                title: 'Village',
-                icon: <VillagerIcon />
+                title: `${translationKey}.village`,
+                icon: <VillagerIcon />,
+                path: RoutesEnum.VILLAGE
             }
         ]
     },
     {
-        title: 'Fighting',
+        title: `${translationKey}.fightin`,
         items: [
             {
-                title: 'Strength',
+                title: `${translationKey}.strength`,
                 icon: <StrengthIcon />,
-                level: 1
+                level: 1,
+                path: RoutesEnum.STRENGTH
             },
             {
-                title: 'Defence',
+                title: `${translationKey}.defence`,
                 icon: <DefenceIcon />,
-                level: 1
+                level: 1,
+                path: RoutesEnum.DEFENCE
             },
             {
-                title: 'Hitpoints',
+                title: `${translationKey}.endurance`,
                 icon: <HitpointsIcon />,
-                level: 1
+                level: 1,
+                path: RoutesEnum.HITPOINTS
             },
             {
-                title: 'Melee',
+                title: `${translationKey}.melee`,
                 icon: <MeleeIcon />,
-                level: 1
+                level: 1,
+                path: RoutesEnum.MELEE
             },
             {
-                title: 'Ranged',
+                title: `${translationKey}.ranged`,
                 icon: <RangedIcon />,
-                level: 1
+                level: 1,
+                path: RoutesEnum.RANGED
             },
             {
-                title: 'Magic',
+                title: `${translationKey}.magic`,
                 icon: <MagicIcon />,
-                level: 1
+                level: 1,
+                path: RoutesEnum.MAGIC
             },
             {
-                title: 'Rituals',
+                title: `${translationKey}.rituals`,
                 icon: <RitualsIcon />,
-                level: 1
+                level: 1,
+                path: RoutesEnum.RITUALS
             }
         ]
     },

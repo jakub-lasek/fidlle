@@ -1,0 +1,15 @@
+{
+    "skills": {
+        "character": "Character",
+        "equipment": "Equipment",
+        "village": "Village",
+        "fighting": "Fighting",
+        "strength": "Strength",
+        "defence": "Defence",
+        "endurance": "Endurance",
+        "melee": "Melee",
+        "ranged": "Ranged",
+        "magic": "Magic",
+        "rituals": "Rituals"
+    }
+}
