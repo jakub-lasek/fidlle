@@ -6,10 +6,16 @@
         "fighting": "Walka",
         "strength": "Siła",
         "defence": "Obrona",
-        "hitpoints": "Wytrzymałość",
+        "endurance": "Wytrzymałość",
         "melee": "Walka wręcz",
         "ranged": "Walka dystansowa",
         "magic": "Magia",
         "rituals": "Rytuały"
+    },
+    "resources": {
+        "ancientScrolls": "Starożytne zwoje",
+        "magicEssence": "Magiczna esencja",
+        "starCrystals": "Gwiezdne kryształy",
+        "gold": "Złoto"
     }
 }

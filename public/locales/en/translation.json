@@ -11,5 +11,11 @@
         "ranged": "Ranged",
         "magic": "Magic",
         "rituals": "Rituals"
+    },
+    "resources": {
+        "ancientScrolls": "Ancient scrolls",
+        "magicEssence": "Magic essences",
+        "starCrystals": "Star crystals",
+        "gold": "Gold"
     }
 }
