@@ -8,5 +8,11 @@ export { default as MagicIcon } from "./Magic"
 export { default as HitpointsIcon } from "./Hitpoints"
 export { default as DefenceIcon } from "./Defence"
 export { default as CalendarIcon } from "./Calendar";
+export { default as AncientScrollIcon } from "./AncientScroll";
+export { default as CrystalIcon } from "./Crystal";
+export { default as MagicEssenceIcon } from "./MagicEssence";
+export { default as GoldIcon } from "./Gold";
+export { default as SkeletonIcon } from "./Skeleton";
+
 
 
