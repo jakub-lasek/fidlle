@@ -7,10 +7,10 @@ import { SkeletonIcon } from "../../shared/icons";
 
 const AppBar: FC = () => {
     return (
-        <header className="w-full p-3 bg-base rounded-bl-lg flex justify-between">
+        <header className="w-full p-1.5 bg-base rounded-bl-lg flex justify-between">
             <GameCalendar />
             <div className="flex justify-between items-center gap-8">
-                {RESOURCES.map((resource: ResourceInterface) => <ResourceItem resource={resource} />)}
+                {RESOURCES.map((resource: ResourceInterface) => <ResourceItem key={resource.name} resource={resource} />)}
                 <SkeletonIcon />
             </div>
         </header>
