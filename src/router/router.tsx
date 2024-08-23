@@ -1,13 +1,13 @@
 
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import GameViewLayout from "../shared/layouts/GameViewLayout";
 import { Equipment, Village } from "../features";
 import { RoutesEnum } from "./routes.enum";
+import { GamePage } from "../pages";
 
 export const ROUTER = createBrowserRouter([
     {
         path: RoutesEnum.GAME,
-        element: <GameViewLayout />,
+        element: <GamePage />,
         children: [
             { path: RoutesEnum.EQUIPMENT, element: <Equipment /> },
             { path: RoutesEnum.VILLAGE, element: <Village /> },

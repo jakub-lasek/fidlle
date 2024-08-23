@@ -21,7 +21,7 @@ export const SIDEBAR_SECTIONS: Array<SidebarSectionInterface> = [
         ]
     },
     {
-        title: `${translationKey}.fightin`,
+        title: `${translationKey}.fighting`,
         items: [
             {
                 title: `${translationKey}.strength`,

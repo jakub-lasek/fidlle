@@ -7,5 +7,6 @@ export { default as MeleeIcon } from "./Melee"
 export { default as MagicIcon } from "./Magic"
 export { default as HitpointsIcon } from "./Hitpoints"
 export { default as DefenceIcon } from "./Defence"
+export { default as CalendarIcon } from "./Calendar";
 
 
