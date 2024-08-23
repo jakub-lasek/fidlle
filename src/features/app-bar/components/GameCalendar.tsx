@@ -7,7 +7,7 @@ const GameCalendar: FC = () => {
     const { gameDate } = useGameDate()
 
     return (
-        <div className="flex text-text text-sm font-semibold items-center gap-2">
+        <div className="flex text-text text-sm font-semibold items-center gap-2 select-none">
             <CalendarIcon />
             <div className="flex flex-col items-center">
                 <span>{format(gameDate, 'dd.MM.yyyy')}</span>

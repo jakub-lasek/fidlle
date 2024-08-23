@@ -12,7 +12,7 @@ const SidebarSection: FC<PropTypes> = ({ title, items }) => {
     const { t } = useTranslation();
 
     return (
-        <div className="divide-y divide-accent">
+        <div className="divide-y divide-accent select-none">
             <div className="w-full p-3 flex items-center font-semibold">{t(title)}</div>
             <div className="w-full flex flex-col">
                 {items.map((item: SidebarItemInterface) => <SidebarItem key={item.title} {...item} />)}
