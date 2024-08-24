@@ -1,11 +1,12 @@
 import { FC } from "react";
 import { ContentWrapper, GroupWrapper } from "../../shared/ui/atoms";
+import { GameItemsGrid } from "../../shared/ui/organisms";
 
 const Equipment: FC = () => {
     return (
         <GroupWrapper>
             <ContentWrapper>
-                <div>Test</div>                
+                <GameItemsGrid items={[]}/>
             </ContentWrapper>
         </GroupWrapper>
     )

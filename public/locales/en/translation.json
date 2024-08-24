@@ -17,5 +17,8 @@
         "magicEssence": "Magic essences",
         "starCrystals": "Star crystals",
         "gold": "Gold"
+    },
+    "itemStats": {
+        "price": "Price"
     }
 }

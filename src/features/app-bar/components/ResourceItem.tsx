@@ -13,7 +13,7 @@ const ResourceItem: FC<PropTypes> = ({ resource }) => {
     const { t } = useTranslation()
 
     return (
-        <Tooltip message={t(resource.name)}>
+        <Tooltip messageElement={<>{t(resource.name)}</>}>
             <div className="flex gap-2 items-center group select-none">
                 {resource.icon}
                 <span className="font-semibold" style={{ color: resource.color }}>{formatter.format(resource.value)}</span>

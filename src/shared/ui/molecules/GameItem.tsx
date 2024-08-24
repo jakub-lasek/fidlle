@@ -1,16 +1,22 @@
-import { FC, ReactElement } from "react";
-import { Tooltip } from "../atoms";
+import { FC, lazy, Suspense } from "react";
+import { GameItemTooltipContent, Tooltip } from "../atoms";
 
 interface PropTypes {
-    icon: ReactElement
+    name: string,
+    iconName: string,
+    stats: Record<string, string | number>,
     excludeBorder?: boolean;
 }
 
-const GameItem: FC<PropTypes> = ({ excludeBorder = false, icon }) => {
+const GameItem: FC<PropTypes> = ({ excludeBorder = false, iconName, name, stats }) => {
+    const IconComponent = lazy(() => import(`../../icons/${iconName}`))
+
     return (
-        <Tooltip message="item">
+        <Tooltip messageElement={<GameItemTooltipContent name={name} stats={stats} />}>
             <div className={`w-9 h-9 rounded-md flex items-center justify-center ${excludeBorder ? '' : 'border border-text'}`}>
-                {icon}
+                <Suspense fallback={<></>}>
+                    <IconComponent />
+                </Suspense>
             </div>
         </Tooltip>
     );

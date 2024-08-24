@@ -17,5 +17,8 @@
         "magicEssence": "Magiczna esencja",
         "starCrystals": "Gwiezdne kryształy",
         "gold": "Złoto"
+    },
+    "itemStats": {
+        "price": "Cena"
     }
 }
