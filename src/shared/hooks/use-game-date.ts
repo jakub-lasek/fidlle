@@ -1,22 +1,9 @@
-import { useEffect, useState } from "react"
 import { subYears } from "date-fns"
 
 const useGameDate = () => {
 
-    const [gameDate, setGameDate] = useState(subYears(new Date(), 8000))
+    const getGameDate = (): Date => subYears(new Date(), 800)
 
-    useEffect(() => {
-        const updateGameDate = () => {
-            setGameDate(subYears(new Date(), 800))
-        }
-
-        updateGameDate();
-
-        const intervalId = setInterval(updateGameDate, 60_000)
-
-        return () => clearInterval(intervalId);
-    })
-
-    return { gameDate }
+    return { getGameDate }
 }
 export default useGameDate;
