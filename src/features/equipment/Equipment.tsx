@@ -5,7 +5,7 @@ const Equipment: FC = () => {
     return (
         <GroupWrapper>
             <ContentWrapper>
-                <div>EQ</div>
+                <div>Test</div>                
             </ContentWrapper>
         </GroupWrapper>
     )
