@@ -20,5 +20,13 @@
     },
     "itemStats": {
         "price": "Cena"
+    },
+    "equipment": {
+        "panels": {
+            "pocket": "Kieszenie",
+            "equipment": "Rynsztunek",
+            "inventory": "Wyposażenie",
+            "stats": "Statystyki"
+        }
     }
 }

@@ -20,5 +20,13 @@
     },
     "itemStats": {
         "price": "Price"
+    },
+    "equipment": {
+        "panels": {
+            "pocket": "Pockets",
+            "equipment": "Equipment",
+            "inventory": "Inventory",
+            "stats": "Statistics"
+        }
     }
 }
